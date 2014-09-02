@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.1.0'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -27,22 +28,27 @@ gem 'spring',        group: :development
 # Bootstrap
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'sass-rails', '>= 3.2'
-gem 'autoprefixer-rails'
+gem "autoprefixer-rails"
 
 # Images
 gem "paperclip", "~> 4.2"
+gem 'aws-sdk'
 
-# Pour Heroku
+# Pour Heroku, rspec
 group :development, :test do
-# Use sqlite3 as the database for Active Record
   gem 'sqlite3'
+  gem "rspec-rails", "2.13.1"
+end
 
+group :test do
+  gem "capybara", "2.1.0"
 end
 
 
+# Pour Heroku
 group :production do
-
   gem 'pg'
+  gem 'rails_12factor'
 
 end
 
