@@ -29,6 +29,9 @@ gem 'bootstrap-sass', '~> 3.2.0'
 gem 'sass-rails', '>= 3.2'
 gem 'autoprefixer-rails'
 
+# Images
+gem "paperclip", "~> 4.2"
+
 # Pour Heroku
 group :development, :test do
 # Use sqlite3 as the database for Active Record
