@@ -39,7 +39,6 @@ gem 'aws-sdk'
 group :development, :test do
   gem 'rspec-rails'
   gem 'jazz_hands'
-
 end
 
 group :test do
