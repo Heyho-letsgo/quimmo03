@@ -2,8 +2,9 @@ Rails.application.routes.draw do
 
 
 
+get 'home'=> 'home#show'
 get 'welcome'=> 'welcome#show'
-root 'welcome#show'
+root 'home#show'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
