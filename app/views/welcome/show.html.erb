@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Quimmo</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
@@ -14,12 +14,32 @@
   </ul>
 </div>
 <div class="container">
-<h2>Welcome</h2>
-  </div>
+  <h2>Welcome</h2>
+</div>
 <div class="container">
   <p>If already login affiche les blocs ci dessous.</p>
+
   <p>If not redirect_to new session.</p>
 </div>
 
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="center-block">
+        Acquéreurs
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="center-block">
+        Biens
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="center-block">
+        Propriétaire
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
