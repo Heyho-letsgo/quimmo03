@@ -36,6 +36,7 @@ GEM
     aws-sdk-v1 (1.52.0)
       json (~> 1.4)
       nokogiri (>= 1.4.4)
+    bcrypt (3.1.7)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     bootstrap-sass (3.2.0.2)
@@ -289,6 +290,7 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails
   aws-sdk
+  bcrypt
   bootstrap-sass
   capybara
   coffee-rails

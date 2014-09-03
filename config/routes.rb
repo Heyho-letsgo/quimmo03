@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
 
 
+  resources :users
+
 get 'home'=> 'home#show'
 get 'welcome'=> 'welcome#show'
 root 'home#show'
