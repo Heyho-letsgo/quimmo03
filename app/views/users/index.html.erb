@@ -1,8 +1,8 @@
 <div class="container">
   <ul class="nav nav-tabs">
-    <li><%= link_to 'Agences', agences_path %></li>
     <li><%= link_to 'QuimmoPro', welcome_path %></li>
-  </ul>
+    <li><%= link_to 'Agences', agences_path %></li>
+      </ul>
 </div>
 
 <div class="container">
@@ -19,6 +19,8 @@
   <table class="table table-condensed   ">
     <thead>
     <tr>
+
+      <th>Id</th>
       <th>Name</th>
       <th>Email</th>
     </tr>
@@ -27,8 +29,11 @@
 
     <tr>
       <% @users.each do |user| %>
+          <td>
+            <%=  link_to user.id,user %>
+          </td>
 
-            <td>
+          <td>
                <%=  user.name %>
             </td>
              <td>

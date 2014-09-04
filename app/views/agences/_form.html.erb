@@ -1,0 +1,68 @@
+<%= form_for(@agence) do |f| %>
+    <%= render "shared/errors", object: @agence %>
+
+    <%# = f.label :raison_sociale %>
+    <%# = f.text_field :raison_sociale, autofocus: true %>
+<div>
+      <form class="form-inline" role="form">
+        <div class="form-group">
+          <label class="sr-only" ><%= f.label :raison_sociale %></label>
+          <input type="text"  class="form-control"  placeholder="Enter Raison sociale"<%= f.text_field :raison_sociale, autofocus: true %>
+        </div>
+        <div class="form-group">
+          <label class="sr-only" ><%= f.label :siret %></label>
+          <input type="text" class="form-control"  placeholder="Entrer N° Siret"<%= f.text_field :siret %>
+        </div>
+        <div class="form-group">
+          <label class="sr-only" ><%= f.label :num_rue %></label>
+          <input type="text" class="form-control"  placeholder="Entrer Num rue"<%= f.text_field :num_rue %>
+        </div>
+        <div class="form-group">
+          <label class="sr-only" ><%= f.label :adresse01l01 %></label>
+          <input type="text" class="form-control"  placeholder="Entrer Première ligne d'adresse"<%= f.text_field :adresse01l01 %>
+        </div>
+        <div class="form-group">
+          <label class="sr-only" ><%= f.label :adresse01l02 %></label>
+          <input type="text" class="form-control"  placeholder="Entrer si nécéssaire deuxième ligne d'adresse"<%= f.text_field :adresse01l02 %>
+        </div>
+        <div class="form-group">
+          <label class="sr-only" ><%= f.label :adresse01l03 %></label>
+          <input type="text" class="form-control"  placeholder="Entrer si nécéssaire troisième ligne d'adresse"<%= f.text_field :adresse01l03 %>
+        </div>
+        <div class="form-group">
+          <label class="sr-only" ><%= f.label :code_postal %></label>
+          <input type="text" class="form-control"  placeholder="Entrer code postal"<%= f.text_field :code_postal %>
+        </div>
+        <div class="form-group">
+          <label class="sr-only" ><%= f.label :ville %></label>
+          <input type="text" class="form-control"  placeholder="Entrer Ville"<%= f.text_field :ville %>
+        </div>
+        <div class="form-group">
+          <label class="sr-only" ><%= f.label :region %></label>
+          <input type="text" class="form-control"  placeholder="Entrer région"<%= f.text_field :region %>
+        </div>
+        <div class="form-group">
+          <label class="sr-only" ><%= f.label :pays %></label>
+          <input type="text" class="form-control"  placeholder="Entrer pays"<%= f.text_field :pays %>
+        </div>
+        <div class="form-group">
+          <label class="sr-only" ><%= f.label :telephone %></label>
+          <input type="text" class="form-control"  placeholder="Entrer Téléphone"<%= f.text_field :telephone %>
+        </div>
+        <div class="form-group">
+          <label class="sr-only" ><%= f.label :fax %></label>
+          <input type="text" class="form-control"  placeholder="Entrer Fax"<%= f.text_field :fax %>
+        </div>
+        <div class="form-group">
+          <label class="sr-only" ><%= f.label :email %></label>
+          <input type="text" class="form-control"  placeholder="Entrer email"<%= f.text_field :email %>
+        </div>
+
+        <button type="submit" class="btn btn-default">Créer</button>
+        <%= link_to "Cancel", agences_path, class: 'button' %>
+
+      </form>
+
+<%	 end %>
+</div>
+

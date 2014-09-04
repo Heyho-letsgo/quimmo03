@@ -2,16 +2,18 @@
   <ul class="nav nav-tabs">
     <li><%= link_to 'QuimmoPro', welcome_path %></li>
     <li><%= link_to 'Users', users_path %></li>
-    <li><%= link_to 'Agences', agences_path %></li>
+    <li><%= link_to 'Liste des agences', agences_path %></li>
   </ul>
 </div>
 
+
+
 <div class="container">
 <h1>
-  <%= @user.name %>
+  <%= @agence.raison_sociale %>
 </h1>
 
 <p>
-  <%= mail_to @user.email, @user.email %>
+  <%= mail_to @agence.email, @agence.email %>
 </p>
 </div>
