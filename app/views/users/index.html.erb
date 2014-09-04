@@ -14,7 +14,7 @@
 
   <div class="panel panel-default">
     <!-- Default panel contents -->
-    <div class="panel-heading"><h3><%= pluralize(@users.size, 'User') %></h3></div>
+    <div class="panel-heading"><h3><%= pluralize(@users.size, 'Utilisateurs') %></h3></div>
 
   <table class="table table-condensed   ">
     <thead>
@@ -29,6 +29,7 @@
 
     <tr>
       <% @users.each do |user| %>
+
           <td>
             <%=  link_to user.id,user %>
           </td>
@@ -41,8 +42,13 @@
             </td>
 
           </tr>
+
+
           </tbody>
-      <% end %>
+
+    <% end %>
       </table>
+  </div>
+  <%= will_paginate @users, renderer: BootstrapPagination::Rails %>
 </div>
-</div>
+

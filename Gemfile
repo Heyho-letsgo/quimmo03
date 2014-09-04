@@ -27,19 +27,22 @@ gem 'sdoc',     group: :doc
 gem 'spring',        group: :development
 
 
+
+
+
 # Bootstrap
 gem 'bootstrap-sass'
 gem 'sass-rails'
 gem "autoprefixer-rails"
-
+gem 'will_paginate-bootstrap'
 # Images
 gem "paperclip"
-gem 'aws-sdk'
 
 group :development, :test do
   gem 'rspec-rails'
   gem 'jazz_hands'
   gem 'sqlite3'
+
 end
 
 group :test do
