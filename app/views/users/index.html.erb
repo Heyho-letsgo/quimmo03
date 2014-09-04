@@ -1,4 +1,11 @@
 <div class="container">
+  <ul class="nav nav-tabs">
+    <li><%= link_to 'Agences', agences_path %></li>
+    <li><%= link_to 'QuimmoPro', welcome_path %></li>
+  </ul>
+</div>
+
+<div class="container">
   <header id="content-header">
 
   </header>
@@ -12,8 +19,8 @@
   <table class="table table-condensed   ">
     <thead>
     <tr>
-      <th>Entete 1</th>
-      <th>Entete 2</th>
+      <th>Name</th>
+      <th>Email</th>
     </tr>
     </thead>
     <tbody>
@@ -22,7 +29,8 @@
       <% @users.each do |user| %>
 
             <td>
-               <%= link_to user.name, user %>
+               <%=  user.name %>
+            </td>
              <td>
                <%= link_to user.email, user %>
             </td>

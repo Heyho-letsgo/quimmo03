@@ -1,0 +1,59 @@
+<div class="container">
+  <ul class="nav nav-tabs">
+    <li><%= link_to 'Users', users_path %></li>
+    <li><%= link_to 'QuimmoPro', welcome_path %></li>
+  </ul>
+</div>
+
+<div class="container">
+  <header id="content-header">
+
+  </header>
+</div>
+<div class="container">
+
+  <div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading"><h3><%= pluralize(@agences.size, 'Agence') %></h3></div>
+
+    <table class="table table-condensed   ">
+      <thead>
+      <tr>
+        <th>Raison sociale</th>
+        <th><span class="glyphicon glyphicon-envelope"></span></th>
+        <th>Raison sociale</th>
+        <th>Raison sociale</th>
+        <th>Raison sociale</th>
+        <th>Raison sociale</th>
+        <th>Raison sociale</th>
+        <th>Raison sociale</th>
+        <th>Raison sociale</th>
+        <th>Raison sociale</th>
+        <th>Raison sociale</th>
+        <th>Raison sociale</th>
+      </tr>
+      </thead>
+      <tbody>
+
+      <tr>
+        <% @agences.each do |agence| %>
+
+            <td><%=  agence.raison_sociale %></td>
+            <td><%= link_to 'M', agence.email %></td>
+            <td><%=  agence.raison_sociale %></td>
+            <td><%=  agence.raison_sociale %></td>
+            <td><%=  agence.raison_sociale %></td>
+            <td><%=  agence.raison_sociale %></td>
+            <td><%=  agence.raison_sociale %></td>
+            <td><%=  agence.raison_sociale %></td>
+            <td><%=  agence.raison_sociale %></td>
+            <td><%=  agence.raison_sociale %></td>
+            <td><%=  agence.raison_sociale %></td>
+            <td><%=  agence.raison_sociale %></td>
+
+            </tr>
+            </tbody>
+        <% end %>
+        </table>
+  </div>
+</div>
