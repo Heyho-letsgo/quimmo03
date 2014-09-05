@@ -1,24 +1,38 @@
-<%= form_for(@user) do |f| %>
-    <%= render "shared/errors", object: @user %>
-    <div>
+<div class="container">
+  <div class="panel panel-default">
+    <!-- Default panel contents -->
 
+    <% if @user.new_record? %>
+        <div class="panel-heading"><h3>Création d'un utilisateur</h3></div>
+    <% else %>
+        <div class="panel-heading"><h3>Mise à jour d'un utilisateur</h3></div>
+    <% end %>
+
+
+  </div>
+
+
+      <%= form_for(@user) do |f| %>
+          <%= render "errors", object: @user %>
           <%= f.label :name %>
-          <%= f.text_field :name, autofocus: true %>
-          <%= f.label :email %>
-          <%= f.email_field :email %>
-          <%= f.label :password %>
-          <%= f.password_field :password %>
-          <%= f.label :password_confirmation, 'Confirm Password' %>
-          <%= f.password_field :password_confirmation %>
-</div>
-<div>
-
-        <%# if @user.new_record? %>
-        <%= f.submit "Create Account" %>
-        <%# else %>
-        <%= f.submit "Update Account" %>
-<% end %>
+            <%= f.text_field :name, autofocus: true %>
+            <%= f.label :email %>
+            <%= f.text_field :email %>
+            <%= f.label :password %>
+            <%= f.text_field :password %>
+            <%= f.label :password_confirmation %>
+            <%= f.text_field :password_confirmation %><br>
 
 
-<%= link_to "Cancel", users_path, class: 'button' %>
+          <p>
+            <% if @user.new_record? %>
+                <%= f.submit "Create Account" %>
+            <% else %>
+                <%= f.submit "Valider la mise à jour" %>
+            <% end %>
+
+            <%= link_to "Cancel", users_path, class: 'button' %>
+          </p>
+
+      <% end %>
 </div>
