@@ -1,17 +1,17 @@
 <% if object.errors.any? %>
     <div class="alert alert-warning" role="alert">
       <header>
-        <h3>
-          Oops! The <%= object.class.name.titleize.downcase %> could not be saved.
-        </h3>
-
         <h4>
-          Please correct the following <%= pluralize(object.errors.count, "error") %>:
+          Oops! The <%= object.class.name.titleize.downcase %> could not be saved.
         </h4>
+
+        <h5>
+          Please correct the following <%= pluralize(object.errors.count, "error") %>:
+        </h5>
       </header>
       <ul>
         <% object.errors.full_messages.each do |message| %>
-            <li><%= message %></li>
+            <%= message %> |
         <% end %>
       </ul>
     </div>

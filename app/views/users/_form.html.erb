@@ -7,32 +7,50 @@
     <% else %>
         <div class="panel-heading"><h3>Mise à jour d'un utilisateur</h3></div>
     <% end %>
-
-
   </div>
 
 
-      <%= form_for(@user) do |f| %>
-          <%= render "errors", object: @user %>
-          <%= f.label :name %>
-            <%= f.text_field :name, autofocus: true %>
-            <%= f.label :email %>
-            <%= f.text_field :email %>
-            <%= f.label :password %>
-            <%= f.text_field :password %>
-            <%= f.label :password_confirmation %>
-            <%= f.text_field :password_confirmation %><br>
+  <%= form_for(@user) do |f| %>
+      <%= render "shared/errors", object: @user %>
 
 
-          <p>
-            <% if @user.new_record? %>
-                <%= f.submit "Create Account" %>
-            <% else %>
-                <%= f.submit "Valider la mise à jour" %>
+    <div class="col-md-3" align="left"> colonne de gauche</div>
+
+
+  <div class="col-md-6">
+  <div class="row">
+            <div class="col-md-6" align="right"><%= f.label :name %></div>
+            <div class="col-md-6 " align="left"><%= f.text_field :name, autofocus: true %></div>
+  </div>
+          <div class="row">
+            <div class="col-md-6" align="right"><%= f.label :email %></div>
+            <div class="col-md-6" align="left"><%= f.text_field :email %></div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6" align="right"><%= f.label :password %></div>
+            <div class="col-md-6" align="left"><%= f.text_field :password %></div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6" align="right"><%= f.label :password_confirmation %></div>
+            <div class="col-md-6" align="left"><%= f.text_field :password_confirmation %></div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6" align="right">
+              <% if @user.new_record? %>
+              <%= f.submit "Create Account" %>
+              <% else %>
+              <%= f.submit "Valider la mise à jour" %>
+              <% end %>
             <% end %>
+              <div class="col-md-6" align="left"><%= link_to "Cancel", users_path, class: 'button' %>
+  </div>
+  </div>
+  </div>
 
-            <%= link_to "Cancel", users_path, class: 'button' %>
-          </p>
+</div>
+            <div class="col-md-3" align="right"> colonne de droite</div>
 
-      <% end %>
 </div>
