@@ -6,8 +6,7 @@ class Agence < ActiveRecord::Base
   validates :code_postal, presence: true
   validates :ville, presence: true
   validates :pays, presence: true
-  validates :email, presence: true, format: /\A\S+@\S+\z/, uniqueness: { case_sensitive: false }
-
+  validates :email, presence: true, format: /\A\S+@\S+\z/, uniqueness: {case_sensitive: false}
 
 
 end

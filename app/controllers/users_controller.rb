@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def index
-    @users = User.paginate(:page => params[:page],:per_page => 5)
+    @users = User.paginate(:page => params[:page], :per_page => 2)
   end
 
   def new
@@ -15,7 +15,7 @@ class UsersController < ApplicationController
     else
       render :new
     end
-   end
+  end
 
 
   def show
@@ -23,17 +23,11 @@ class UsersController < ApplicationController
   end
 
 
-
-
   private
   def user_params
     params.require(:user).
         permit(:name, :email, :password, :password_confirmation, :username, :admin)
   end
-
-
-
-
 
 
 end

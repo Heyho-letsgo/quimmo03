@@ -2,12 +2,12 @@
   <ul class="nav nav-tabs">
     <li><%= link_to 'QuimmoPro', welcome_path %></li>
     <li><%= link_to 'Agences', agences_path %></li>
-      </ul>
+  </ul>
 </div>
 
 <div class="container">
   <header id="content-header">
-
+texte du content header
   </header>
 </div>
 <div class="container">
@@ -16,38 +16,38 @@
     <!-- Default panel contents -->
     <div class="panel-heading"><h3><%= pluralize(@users.size, 'Utilisateurs') %></h3></div>
 
-  <table class="table table-condensed   ">
-    <thead>
-    <tr>
+    <table class="table table-condensed">
+      <thead>
+      <tr>
 
-      <th>Id</th>
-      <th>Name</th>
-      <th>Email</th>
-    </tr>
-    </thead>
-    <tbody>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+      </thead>
+      <tbody>
 
-    <tr>
-      <% @users.each do |user| %>
+      <tr>
+        <% @users.each do |user| %>
 
-          <td>
-            <%=  link_to user.id,user %>
-          </td>
-
-          <td>
-               <%=  user.name %>
-            </td>
-             <td>
-               <%= link_to user.email, user %>
+            <td>
+              <%= link_to user.id, user %>
             </td>
 
-          </tr>
+            <td>
+              <%= user.name %>
+            </td>
+            <td>
+              <%= link_to user.email, user %>
+            </td>
+
+            </tr>
 
 
-          </tbody>
+            </tbody>
 
-    <% end %>
-      </table>
+        <% end %>
+        </table>
   </div>
   <%= will_paginate @users, renderer: BootstrapPagination::Rails %>
 </div>

@@ -10,7 +10,7 @@ class CreateAgences < ActiveRecord::Migration
       t.string :code_postal
       t.string :ville
       t.string :region
-      t.string :pays
+      t.string :pays, default: 'France'
       t.string :telephone
       t.string :fax
       t.string :email

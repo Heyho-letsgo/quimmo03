@@ -1,68 +1,118 @@
-<%= form_for(@agence) do |f| %>
-    <%= render "shared/errors", object: @agence %>
-
-    <%# = f.label :raison_sociale %>
-    <%# = f.text_field :raison_sociale, autofocus: true %>
-<div>
-      <form class="form-inline" role="form">
-        <div class="form-group">
-          <label class="sr-only" ><%= f.label :raison_sociale %></label>
-          <input type="text"  class="form-control"  placeholder="Enter Raison sociale"<%= f.text_field :raison_sociale, autofocus: true %>
-        </div>
-        <div class="form-group">
-          <label class="sr-only" ><%= f.label :siret %></label>
-          <input type="text" class="form-control"  placeholder="Entrer N° Siret"<%= f.text_field :siret %>
-        </div>
-        <div class="form-group">
-          <label class="sr-only" ><%= f.label :num_rue %></label>
-          <input type="text" class="form-control"  placeholder="Entrer Num rue"<%= f.text_field :num_rue %>
-        </div>
-        <div class="form-group">
-          <label class="sr-only" ><%= f.label :adresse01l01 %></label>
-          <input type="text" class="form-control"  placeholder="Entrer Première ligne d'adresse"<%= f.text_field :adresse01l01 %>
-        </div>
-        <div class="form-group">
-          <label class="sr-only" ><%= f.label :adresse01l02 %></label>
-          <input type="text" class="form-control"  placeholder="Entrer si nécéssaire deuxième ligne d'adresse"<%= f.text_field :adresse01l02 %>
-        </div>
-        <div class="form-group">
-          <label class="sr-only" ><%= f.label :adresse01l03 %></label>
-          <input type="text" class="form-control"  placeholder="Entrer si nécéssaire troisième ligne d'adresse"<%= f.text_field :adresse01l03 %>
-        </div>
-        <div class="form-group">
-          <label class="sr-only" ><%= f.label :code_postal %></label>
-          <input type="text" class="form-control"  placeholder="Entrer code postal"<%= f.text_field :code_postal %>
-        </div>
-        <div class="form-group">
-          <label class="sr-only" ><%= f.label :ville %></label>
-          <input type="text" class="form-control"  placeholder="Entrer Ville"<%= f.text_field :ville %>
-        </div>
-        <div class="form-group">
-          <label class="sr-only" ><%= f.label :region %></label>
-          <input type="text" class="form-control"  placeholder="Entrer région"<%= f.text_field :region %>
-        </div>
-        <div class="form-group">
-          <label class="sr-only" ><%= f.label :pays %></label>
-          <input type="text" class="form-control"  placeholder="Entrer pays"<%= f.text_field :pays %>
-        </div>
-        <div class="form-group">
-          <label class="sr-only" ><%= f.label :telephone %></label>
-          <input type="text" class="form-control"  placeholder="Entrer Téléphone"<%= f.text_field :telephone %>
-        </div>
-        <div class="form-group">
-          <label class="sr-only" ><%= f.label :fax %></label>
-          <input type="text" class="form-control"  placeholder="Entrer Fax"<%= f.text_field :fax %>
-        </div>
-        <div class="form-group">
-          <label class="sr-only" ><%= f.label :email %></label>
-          <input type="text" class="form-control"  placeholder="Entrer email"<%= f.text_field :email %>
-        </div>
-
-        <button type="submit" class="btn btn-default">Créer</button>
-        <%= link_to "Cancel", agences_path, class: 'button' %>
-
-      </form>
-
-<%	 end %>
+<div class="container">
+  <header id="content-header">
+    texte du content header
+  </header>
 </div>
 
+<div class="container">
+  <div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading"><h3>Création d'une agence</h3></div>
+  </div>
+
+
+
+  <table class="table">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12"> Espace</div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">Colonne gauche</div>
+        <div class="col-sm-6">
+          <%= form_for(@agence) do |f| %>
+              <%= render "shared/errors", object: @agence %>
+
+              <%# = f.label :raison_sociale %>
+              <%# = f.text_field :raison_sociale, autofocus: true %>
+
+              <div class="row">
+
+                <div class="col-sm-6">
+                  <%= f.label :raison_sociale %>
+                </div>
+
+                <div class="col-sm-6">
+                  <%= f.text_field :raison_sociale, autofocus: true %>
+                </div>
+
+                <div class="col-sm-6">
+                  <%= f.label :siret %>
+                </div>
+                <div class="col-sm-6">
+                  <%= f.text_field :siret %>
+                </div>
+                <div class="col-sm-6">
+                  <%= f.label :num_rue %>
+                </div>
+                <div class="col-sm-6">
+                  <%= f.text_field :num_rue %>
+                </div>
+                <div class="col-sm-6">
+                  <%= f.label :adresse01l01 %>
+                </div>
+                <div class="col-sm-6">
+                  <%= f.text_field :adresse01l01 %>
+                </div>
+                <div class="col-sm-6">
+                  <%= f.label :adresse01l02 %>
+                </div>
+                <div class="col-sm-6">
+                  <%= f.text_field :adresse01l02 %>
+                </div>
+                <div class="col-sm-6">
+                  <%= f.label :adresse01l03 %>
+                </div>
+                <div class="col-sm-6">
+                  <%= f.text_field :adresse01l03 %>
+                </div>
+                <div class="col-sm-6">
+                  <%= f.label :code_postal %>
+                </div>
+                <div class="col-sm-6">
+                  <%= f.text_field :ville %>
+                </div>
+                <div class="col-sm-6">
+                  <%= f.label :region %></div>
+                <div class="col-sm-6">
+                  <%= f.text_field :region %>
+
+                </div>
+                <div class="col-sm-6">
+                  <%= f.label :pays %>
+                </div>
+                <div class="col-sm-6">
+                  <%= f.text_field :pays %>
+                </div>
+                <div class="col-sm-6">
+                  <%= f.label :telephone %>
+                </div>
+                <div class="col-sm-6">
+                  <%= f.text_field :telephone %>
+                </div>
+                <div class="col-sm-6">
+                  <%= f.label :fax %>
+                </div>
+                <div class="col-sm-6">
+                  <%= f.text_field :fax %>
+                </div>
+                <div class="col-sm-6">
+                  <%= f.label :email %>
+                </div>
+                <div class="col-sm-6">
+                  <%= f.text_field :email %>
+                </div>
+                <div class="col-sm-12">
+                  <button type="submit" class="btn btn-default">Créer</button>
+                  <%= link_to "Cancel", agences_path, class: 'button' %>
+                </div>
+          <% end %>
+          </div>
+          </div>
+        <div class="col-sm-3">Colonne droite</div>
+    </div>
+</div>
+
+  </table>
+</div>
