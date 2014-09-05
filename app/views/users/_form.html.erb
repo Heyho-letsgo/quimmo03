@@ -14,43 +14,44 @@
       <%= render "shared/errors", object: @user %>
 
 
-    <div class="col-md-3" align="left"> colonne de gauche</div>
+      <div class="col-md-3" align="left"> colonne de gauche</div>
 
 
-  <div class="col-md-6">
-  <div class="row">
-            <div class="col-md-6" align="right"><%= f.label :name %></div>
-            <div class="col-md-6 " align="left"><%= f.text_field :name, autofocus: true %></div>
-  </div>
-          <div class="row">
-            <div class="col-md-6" align="right"><%= f.label :email %></div>
-            <div class="col-md-6" align="left"><%= f.text_field :email %></div>
-          </div>
+      <div class="col-md-6">
 
-          <div class="row">
-            <div class="col-md-6" align="right"><%= f.label :password %></div>
-            <div class="col-md-6" align="left"><%= f.text_field :password %></div>
-          </div>
+        <div class="row">
+          <div class="col-md-6" align="right"><%= f.label :name %></div>
+          <div class="col-md-6 " align="left"><%= f.text_field :name, autofocus: true %></div>
+        </div>
 
-          <div class="row">
-            <div class="col-md-6" align="right"><%= f.label :password_confirmation %></div>
-            <div class="col-md-6" align="left"><%= f.text_field :password_confirmation %></div>
-          </div>
+        <div class="row">
+          <div class="col-md-6" align="right"><%= f.label :email %></div>
+          <div class="col-md-6" align="left"><%= f.text_field :email %></div>
+        </div>
 
-          <div class="row">
-            <div class="col-md-6" align="right">
-              <% if @user.new_record? %>
-              <%= f.submit "Create Account" %>
-              <% else %>
-              <%= f.submit "Valider la mise à jour" %>
-              <% end %>
+        <div class="row">
+          <div class="col-md-6" align="right"><%= f.label :password %></div>
+          <div class="col-md-6" align="left"><%= f.text_field :password %></div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6" align="right"><%= f.label :password_confirmation %></div>
+          <div class="col-md-6" align="left"><%= f.text_field :password_confirmation %></div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6" align="right">
+            <% if @user.new_record? %>
+                <%= f.submit "Create Account" %>
+            <% else %>
+                <%= f.submit "Valider la mise à jour" %>
             <% end %>
-              <div class="col-md-6" align="left"><%= link_to "Cancel", users_path, class: 'button' %>
-  </div>
-  </div>
-  </div>
+            </div>
+            <div class="col-md-6" align="left"><%= link_to "Cancel", users_path %></div>
+        </div>
+        </div>
+          <% end %>
 
-</div>
-            <div class="col-md-3" align="right"> colonne de droite</div>
 
+  <div class="col-md-3" align="right"> colonne de droite</div>
 </div>
