@@ -43,8 +43,8 @@
       <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/agences/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.767642" vertical-offset="1264" max-vertical-offset="1845">
-              <caret line="114" column="6" selection-start-line="114" selection-start-column="6" selection-end-line="114" selection-end-column="6" />
+            <state vertical-scroll-proportion="1.1549053" vertical-offset="589" max-vertical-offset="1935">
+              <caret line="84" column="34" selection-start-line="84" selection-start-column="24" selection-end-line="84" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -1294,8 +1294,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/agences/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.767642" vertical-offset="1264" max-vertical-offset="1845">
-          <caret line="114" column="6" selection-start-line="114" selection-start-column="6" selection-end-line="114" selection-end-column="6" />
+        <state vertical-scroll-proportion="1.1549053" vertical-offset="589" max-vertical-offset="1935">
+          <caret line="84" column="34" selection-start-line="84" selection-start-column="24" selection-end-line="84" selection-end-column="34" />
           <folding />
         </state>
       </provider>
