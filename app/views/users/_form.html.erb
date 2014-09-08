@@ -1,11 +1,11 @@
-<div class="container">
+<div class="container" style="border: 1px solid black">
   <div class="panel panel-default">
     <!-- Default panel contents -->
 
     <% if @user.new_record? %>
-        <div class="panel-heading"><h3>Création d'un utilisateur</h3></div>
+        <div class="panel-heading">Création d'un utilisateur</div>
     <% else %>
-        <div class="panel-heading"><h3>Mise à jour d'un utilisateur</h3></div>
+        <div class="panel-heading">Mise à jour d'un utilisateur</div>
     <% end %>
   </div>
 
@@ -14,10 +14,10 @@
       <%= render "shared/errors", object: @user %>
 
 
-      <div class="col-md-3" align="left"> colonne de gauche</div>
+      <div class="col-md-4" align="left" style="border: 1px solid black"> colonne de gauche</div>
 
 
-      <div class="col-md-6">
+      <div class="col-md-4" style="border: 1px solid black">
 
         <div class="row">
           <div class="col-md-6" align="right"><%= f.label :name %></div>
@@ -38,8 +38,12 @@
           <div class="col-md-6" align="right"><%= f.label :password_confirmation %></div>
           <div class="col-md-6" align="left"><%= f.text_field :password_confirmation %></div>
         </div>
-
         <div class="row">
+          <div class="col-md-12"><hr></div>
+        </div>
+
+
+        <div class="row" style="border: 1px solid black">
           <div class="col-md-6" align="right">
             <% if @user.new_record? %>
                 <%= f.submit "Create Account" %>
@@ -53,5 +57,7 @@
           <% end %>
 
 
-  <div class="col-md-3" align="right"> colonne de droite</div>
+  <div class="col-md-4" align="right"
+
+       style="border: 1px solid black"> colonne de droite</div>
 </div>

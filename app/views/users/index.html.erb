@@ -1,24 +1,17 @@
 <%= render 'users/nav'%>
+<%= render 'users/panel'%>
 <div class="container">
-
-  <div class="panel panel-default">
-    <!-- Default panel contents -->
-    <div class="panel-heading"><%= pluralize(User.all.size, 'Utilisateurs') %></div>
-
-    <table class="table table-condensed">
+    <table class="table table-condensed table-hover">
       <thead>
       <tr>
-
         <th>Id</th>
         <th>Name</th>
         <th>Email</th>
       </tr>
       </thead>
       <tbody>
-
-      <tr>
+      <tr >
         <% @users.each do |user| %>
-
             <td>
               <%= link_to user.id, user %>
             </td>
@@ -26,18 +19,14 @@
             <td>
               <%= user.name %>
             </td>
+
             <td>
               <%= link_to user.email, user %>
             </td>
 
             </tr>
-
-
             </tbody>
-
         <% end %>
         </table>
-  </div>
-  <%= will_paginate @users, renderer: BootstrapPagination::Rails %>
+  <%= will_paginate @users, renderer: BootstrapPagination::Rails, class: 'pagination-sm' %>
 </div>
-
