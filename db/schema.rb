@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140904075017) do
+ActiveRecord::Schema.define(version: 20140909080356) do
 
   create_table "agences", force: true do |t|
     t.string   "raison_sociale"
@@ -37,6 +37,9 @@ ActiveRecord::Schema.define(version: 20140904075017) do
     t.string   "password_digest"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "agence_id"
   end
+
+  add_index "users", ["agence_id"], name: "index_users_on_agence_id"
 
 end

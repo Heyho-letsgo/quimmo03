@@ -6,26 +6,7 @@
   </ul>
 </div>
 
-<div class="container">
-  <h1>
-    <%= @agence.raison_sociale %>
-  </h1>
 
-  <%= @agence.raison_sociale %>
-  <%= @agence.siret %>
-  <%= @agence.num_rue %>
-  <%= @agence.adresse01l01 %>
-  <%= @agence.adresse01l02 %>
-  <%= @agence.adresse01l03 %>
-  <%= @agence.code_postal %>
-  <%= @agence.ville %>
-  <%= @agence.region %>
-  <%= @agence.pays %>
-  <%= @agence.telephone %>
-  <%= @agence.fax %>
-  <%= mail_to @agence.email, @agence.email %>
-
-</div>
 
 <div class="container" style="border: 1px solid black">
   <div class="panel panel-default">
@@ -50,6 +31,8 @@
           <div class="col-md-6" align="right">Raison sociale</div>
           <div class="col-md-6 " align="left"><%= @agence.raison_sociale %></div>
         </div>
+
+
 
         <div class="row">
           <div class="col-md-6" align="right">N° de Siret</div>

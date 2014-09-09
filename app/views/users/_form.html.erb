@@ -43,6 +43,18 @@
         </div>
 
 
+        <div class="row">
+          <div class="col-md-6" align="right"><%= f.label :password_confirmation %></div>
+          <div class="col-md-6" align="left"><%= f.text_field :password_confirmation %></div>
+        </div>
+        <div class="row">
+          <div class="col-md-12"><hr></div>
+        </div>
+
+
+
+
+
         <div class="row" style="border: 1px solid black">
           <div class="col-md-6" align="right">
             <% if @user.new_record? %>

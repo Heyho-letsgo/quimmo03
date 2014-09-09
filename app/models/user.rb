@@ -1,6 +1,10 @@
 class User < ActiveRecord::Base
   has_secure_password
 
+  belongs_to :agence
+
+
+
   validates :name, presence: true
   validates :email, presence: true, format: /\A\S+@\S+\z/, uniqueness: {case_sensitive: false}
   validates :password, length: {minimum: 8, allow_blank: true}
