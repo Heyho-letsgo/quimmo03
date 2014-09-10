@@ -8,8 +8,10 @@ get 'home'=> 'home#show'
 get 'welcome'=> 'welcome#show'
 root 'home#show'
 
-resources :users
-resources :agences
+
+resources :agences do
+    resources :users
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

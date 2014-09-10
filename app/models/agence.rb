@@ -1,7 +1,7 @@
 class Agence < ActiveRecord::Base
-
-
   has_many :users
+
+
 
 
   validates :raison_sociale, presence: true

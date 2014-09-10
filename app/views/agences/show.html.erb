@@ -1,8 +1,8 @@
 <div class="container">
   <ul class="nav nav-tabs">
-    <li><%= link_to 'QuimmoPro', welcome_path %></li>
-    <li><%= link_to 'Users', users_path %></li>
-    <li><%= link_to 'Liste des agences', agences_path %></li>
+    <li><%#= link_to 'QuimmoPro', welcome_path %></li>
+    <li><%#= link_to 'Liste des agences', agences_path %></li>
+    <li><%#= link_to 'Users', users_path %></li>
   </ul>
 </div>
 
@@ -28,8 +28,8 @@
       <div class="col-md-4" style="border: 1px solid black">
 
         <div class="row">
-          <div class="col-md-6" align="right">Raison sociale</div>
-          <div class="col-md-6 " align="left"><%= @agence.raison_sociale %></div>
+          <div class="col-md-6">Raison sociale</div>
+          <div class="col-md-6" ><%= @agence.raison_sociale %></div>
         </div>
 
 
@@ -114,7 +114,9 @@
       </div>
 
 
-  <div class="col-md-4" align="right"
+  <div class="col-md-4" style="border: 1px solid black">
 
-       style="border: 1px solid black"> colonne de droite</div>
+    <%= render 'users/index_insert'%></div>
+  </div>
+
 </div>

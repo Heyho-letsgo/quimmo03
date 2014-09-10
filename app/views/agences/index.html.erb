@@ -1,7 +1,6 @@
 <div class="container">
   <ul class="nav nav-tabs">
     <li><%= link_to 'QuimmoPro', welcome_path %></li>
-    <li><%= link_to 'Users', users_path %></li>
   </ul>
 </div>
 
@@ -23,7 +22,8 @@
       <thead>
       <tr>
         <th>Id</th>
-        <th>Raison sociale</th>
+         <th>Raison sociale</th>
+        <th>Users pour cette agence</th>
         <th>Siret</th>
         <th>Adresse01l01</th>
         <th>adresse01l02</th>
@@ -39,10 +39,12 @@
       </thead>
       <tbody>
 
+
       <tr>
         <% @agences.each do |agence| %>
             <td><%= link_to agence.id, agence_path(agence) %></td>
-            <td><%= agence.raison_sociale %></td>
+            <td><%= link_to agence.raison_sociale, agence_path(agence) %></td>
+            <td><%= link_to 'Utlisateurs', agence_users_path(agence) %></td>
             <td><%= agence.siret %></td>
             <td><%= agence.adresse01l01 %></td>
             <td><%= agence.adresse01l02 %></td>

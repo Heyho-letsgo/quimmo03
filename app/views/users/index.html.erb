@@ -1,32 +1,38 @@
-<%= render 'users/nav'%>
-<%= render 'users/panel'%>
+<%#= render 'users/nav'%>
+<%#= #render 'users/panel'%>
+
+<h1>Liste des users pour <%= link_to @agence.raison_sociale, @agence %></h1>
+
+
+
+
 <div class="container">
-    <table class="table table-condensed table-hover">
-      <thead>
-      <tr>
-        <th>Id</th>
-        <th>Name</th>
-        <th>Email</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr >
-        <% @users.each do |user| %>
-            <td>
-              <%= link_to user.id, user %>
-            </td>
+  <table class="table table-condensed table-hover">
+    <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <% @users.each do |user| %>
+          <td>
+            <%= link_to user.id, [user.agence,user]  %>
+          </td>
 
-            <td>
-              <%= user.name %>
-            </td>
+          <td>
+            <%= link_to user.name, [user.agence,user] %>
+          </td>
 
-            <td>
-              <%= link_to user.email, user %>
-            </td>
+          <td>
+            <%= link_to user.email, [user.agence,user]%>
+          </td>
 
-            </tr>
-            </tbody>
-        <% end %>
-        </table>
-  <%= will_paginate @users, renderer: BootstrapPagination::Rails, class: 'pagination-sm' %>
+          </tr>
+          </tbody>
+      <% end %>
+      </table>
+  <%# will_paginate @users, renderer: BootstrapPagination::Rails, class: 'pagination-sm' %>
 </div>

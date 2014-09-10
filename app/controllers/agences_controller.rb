@@ -2,11 +2,16 @@ class AgencesController < ApplicationController
 
   def index
     @agences = Agence.all
+
   end
 
 
   def show
     @agence = Agence.find(params[:id])
+  @users = User.where(params[:agence_id])
+
+  @agence_users = @agence.users
+
   end
 
   def new
@@ -23,6 +28,9 @@ class AgencesController < ApplicationController
     end
   end
 
+  def edit
+
+  end
 
   private
 
