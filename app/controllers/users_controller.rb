@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-#before_action :set_agence
+before_action :set_agence, only: [:create]
 
 
   def index
@@ -24,15 +24,15 @@ class UsersController < ApplicationController
 
 
   def new
-    @agences = Agence.all
-    @user = User.new
+          @user = User.new{params[:agence_id]}
+          @agence = Agence.find(params[:agence_id])
   end
 
   def create
-    @user = User.new(user_params)
+    @user = @agence.users.new(user_params)
     if @user.save
       session[:user_id] = @user.id
-      redirect_to @user
+      redirect_to agence_path@agence
     else
       render :new
     end

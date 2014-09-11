@@ -8,13 +8,19 @@
       <h1>Sign Up</h1>
     </header>
 
-
-  <%= form_for(@user) do |f| %>
+  <%= form_for([@agence, @user]) do |f| %>
     <%= render "shared/errors", object: @user %>
 
   <div class="col-md-12" style="border: 1px solid black">
-    <div class="row">
 
+    <div class="row">
+      <div class="col-md-12"><%= @agence.inspect%> </div>
+    </div>
+
+
+
+
+    <div class="row">
       <div class="col-md-6"><%= f.label :name %></div>
       <div class="col-md-6" ><%= f.text_field :name, size: 40, autofocus: true %></div>
     </div>

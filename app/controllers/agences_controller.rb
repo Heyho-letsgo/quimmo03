@@ -7,9 +7,8 @@ class AgencesController < ApplicationController
 
 
   def show
-    @agence = Agence.find(params[:id])
+  @agence = Agence.find(params[:id])
   @users = User.where(params[:agence_id])
-
   @agence_users = @agence.users
 
   end
