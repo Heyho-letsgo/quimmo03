@@ -6,8 +6,14 @@ Rails.application.routes.draw do
 
 get 'home'=> 'home#show'
 get 'welcome'=> 'welcome#show'
-root 'home#show'
 
+resource :session
+get 'signin'=> 'sessions#new'
+get 'signup'=> 'users#new'
+resources :users
+
+
+root 'home#show'
 
 resources :agences do
     resources :users

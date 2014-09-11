@@ -7,7 +7,7 @@
 
 <div class="container">
   <%	 if @agence_users.size > 0 %>
-      <h1>Liste des users pour <%= link_to @agence.raison_sociale, @agence %></h1>
+      <h4>Liste des users pour <%= link_to @agence.raison_sociale, @agence %></h4>
 
       <% @agence_users.each do |user| %>
  <ul>

@@ -12,14 +12,19 @@ class UsersController < ApplicationController
   end
 
   def show
-        @agence = Agence.find(params[:agence_id])
-        @parent_users = @agence.users #, agence_user_path
-        @user = @parent_users.find(params[:id])
+    # la variable @agence est utilisée pour la session
+    @agence = Agence.find(params[:agence_id])
+
+    # la variable @agence_admin est utilisée pour l'administration et l'affichage des users
+    @agence_admin = Agence.find(params[:agence_id])
+    @parent_users = @agence_admin.users #, agence_user_path
+    @user = @parent_users.find(params[:id])
   end
 
 
 
   def new
+    @agences = Agence.all
     @user = User.new
   end
 
@@ -27,7 +32,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       session[:user_id] = @user.id
-      redirect_to @user, notice: 'Thanks for signing up!'
+      redirect_to @user
     else
       render :new
     end
@@ -43,7 +48,7 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     if @user.update(user_params)
-      redirect_to @user, notice: "Movie successfully updated!"
+      redirect_to @user, notice: "User successfully updated!"
     else
       render :edit
     end

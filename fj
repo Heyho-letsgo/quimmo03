@@ -1,0 +1,25 @@
++----+----------+--------------------+--------------------------------------------------------------+-------------------------+-------------------------+-----------+
+| id | name     | email              | password_digest                                              | created_at              | updated_at              | agence_id |
++----+----------+--------------------+--------------------------------------------------------------+-------------------------+-------------------------+-----------+
+| 1  | Lawrence | larry@example.com  | $2a$10$166rt6uAzNtJQtGjX4JCAO1b9LfHNL/cYexWFk2xfHYxChV1/m7Ai | 2014-09-03 14:47:51 UTC | 2014-09-09 09:42:38 UTC | 1         |
+| 2  | Andy     | abaudin@gmail.com  | $2a$10$h.uX0Hlu6lO5mPj1rHlJAezuKxkP7HKx9RZ2QIDVkT8TZyLVTKBTC | 2014-09-03 14:48:29 UTC | 2014-09-09 09:45:22 UTC | 1         |
+| 3  | Carlotta | carlotta@gmail.com | $2a$10$TR0b/8gmSqhYqoyuXXDwZuogFuRBOONR521FyLDZ.Dvfayau73s52 | 2014-09-03 16:06:41 UTC | 2014-09-03 16:06:41 UTC |           |
+| 4  | Olga     | o@exemple.com      | $2a$10$K6wJlT0YJia5EwIjRphafOZilq76jlXJxq0qF7.hd9emkRT9NiCkq | 2014-09-03 19:08:56 UTC | 2014-09-03 19:08:56 UTC |           |
+| 5  | pascal   | pa@exemple.com     | $2a$10$2wnyzF4aqPKrnbtGsEHzOeLI5HAxp6aqmieqjJQBWQYYzK9cK5m52 | 2014-09-03 19:27:42 UTC | 2014-09-03 19:27:42 UTC |           |
+| 6  | Angie    | angie@gmail.com    | $2a$10$hKg8X1.0DZ4vu08J2Ojqr.Q9Y88LRLiLaWLqRU/LLx.MwkJ3kwMGW | 2014-09-03 19:36:21 UTC | 2014-09-03 19:36:21 UTC |           |
+| 7  | pascal   | paa@exemple.com    | $2a$10$rdRPgbwP0AUFe04CGMHUSeNZd9lyAxthxj4sdfAym1K.8Yl43hnfe | 2014-09-03 19:39:17 UTC | 2014-09-03 19:39:17 UTC |           |
+| 8  | Zoé      | ZO@exemple.com     | $2a$10$EWGAar.IvTczwDL.cTz6N.x9O.BE/q/AEmqZPvKUsvFngu7WkTil. | 2014-09-04 07:25:38 UTC | 2014-09-04 07:25:38 UTC |           |
+| 9  | xman     | xman@exemple.com   | $2a$10$kij7JrNk.ALw.UyyXySO1eFRJim1r/gzy8o1Dyo2hDdT1FgaIFCji | 2014-09-04 07:43:00 UTC | 2014-09-04 07:43:00 UTC |           |
+| 10 | Fanche   | f@exemple.com      | $2a$10$pmNXtgwNeVT9cThL3MFXsuJXgDTlNXQUf6AhpBd36pk/6SuQB2VHe | 2014-09-04 12:39:18 UTC | 2014-09-04 12:39:18 UTC |           |
+| 11 | zoé      | zoe@gmail.com      | $2a$10$Xy5aDGEFSVO/80/uFH9kQOlATcfSfOZ2Y/gn/x0F6tvyp2Q2CabU2 | 2014-09-05 13:30:31 UTC | 2014-09-05 13:30:31 UTC |           |
+| 12 | paul     | p@exemple.com      | $2a$10$AQoP/K9nIFM9oE0B5PbqLeEaDHP9/17omOJkM2PNX63gPwtF0VCwe | 2014-09-05 13:33:49 UTC | 2014-09-05 13:33:49 UTC |           |
+| 13 | Zia      | zia@exemple.com    | $2a$10$OeAV8ho5py4hFnLy6niGnemzzi0elVIyv.3z/gFMGyOU1ietji1uO | 2014-09-05 13:36:46 UTC | 2014-09-05 13:36:46 UTC |           |
+| 14 | zoulou   | dfghj@exemple.com  | $2a$10$44Uj3t2/r2XQ40n04G1piOtomKejfFVKWB3dpUdu2Wc6ePri/pgPu | 2014-09-05 13:47:12 UTC | 2014-09-05 13:47:12 UTC |           |
+| 15 | ax       | x@x.com            | $2a$10$Wh.y7CgV9iG8JolqKiD1Z.hiWDJpX8QNhfnmHMuAIbCAxqAocJ7Tq | 2014-09-05 13:55:31 UTC | 2014-09-05 13:55:31 UTC |           |
+| 16 | xx       | xx@exemple.com.com | $2a$10$griM9.lQMTyYemAQwh9t5uAGMEdJC5Tni3z5vly1.Q8OF0UVqYijG | 2014-09-05 14:27:42 UTC | 2014-09-05 14:27:42 UTC |           |
+| 17 | y        | t@t.com            | $2a$10$TKjYHxnpvl2ocE/LDX1k1.ZjZgtAqc2Wqb/nNmITrCYiQn9Jzuzty | 2014-09-05 14:30:30 UTC | 2014-09-05 14:30:30 UTC |           |
+| 18 | v        | v@v.com            | $2a$10$h9YJzFh69bGQVKmGZkZIOup3mz6c4V73XZ5LtOTWXiamJdrNu7PO6 | 2014-09-05 14:31:12 UTC | 2014-09-05 14:31:12 UTC |           |
+| 19 | eee      | e@e.com            | $2a$10$pI2LE2.Va1gxvhirJ7fnseE5bbvwEZD/5QOvRmO9gnYLhbsRjNAJe | 2014-09-05 14:31:33 UTC | 2014-09-05 14:36:39 UTC |           |
+| 20 | rttt     | rtt@e.com          | $2a$10$svlyy47cU8UE8eBcv7lmCeR65U74OzCLJ62TbnbNtZY11T6Ale/w6 | 2014-09-05 15:26:44 UTC | 2014-09-05 15:26:44 UTC |           |
++----+----------+--------------------+--------------------------------------------------------------+-------------------------+-------------------------+-----------+
+20 rows in set
