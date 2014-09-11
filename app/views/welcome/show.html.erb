@@ -12,11 +12,11 @@
   <ul class="nav nav-tabs">
     <%= link_to 'home', home_path %>       <%= link_to 'Sign Out', session_path, method: :delete, class: 'button' %>
 
-      <% if current_user%>
-          utilisateur : <%= @user[:id]%> <%= @user[:name]%>
-          Agence: <%= @agence[:raison_sociale]%>
+    <% if current_user %>
+        utilisateur : <%= @user[:id] %> <%= @user[:name] %>
+        Agence: <%= link_to @agence[:raison_sociale], agence_path(@agence) %>
 
-      <% end %>
+    <% end %>
 
   </ul>
 </div>
@@ -25,7 +25,6 @@
 </div>
 <div class="container">
   <p>If already login affiche les blocs ci dessous.</p>
-
 
 
   <p>If not redirect_to new session.</p>

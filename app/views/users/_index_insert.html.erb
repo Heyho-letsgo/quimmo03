@@ -6,22 +6,47 @@
 
 
 <div class="container">
-  <% if @agence_users.size > 0 %>
-      <h4>Liste des users pour <%= link_to @agence.raison_sociale, @agence %></h4>
-      <%= pluralize(@agence_users.count, 'user') %>
-      <% @agence_users.each do |user| %>
-          <ul>
-            <li><%= user.id %>  <%= link_to user.name, [user.agence, user] %></li>
-          </ul>
 
+  <div class="row">
+    <div class="col-md-12">
+      <% if @agence_users.size > 0 %>
+          <h4>Liste des users pour <%= link_to @agence.raison_sociale, @agence %></h4>
+          <%= pluralize(@agence_users.count, 'user') %>
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <% @agence_users.each do |user| %>
+                  <li><%= user.id %>  <%= link_to user.name, [user.agence, user] %></li>
+              <% end %>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              Voulez vous créer un nouvel utilisateur pour :<br> <%= @agence.raison_sociale %> ?
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <%= link_to 'Oui', new_agence_user_path(@agence) %>
+            </div>
+          </div>
+      <% else %>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-12"> Aucun utilisateurs !</div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">Voulez vous en créer un pour cette agence ?</div>
+            <div class="col-md-8"><%= link_to 'Oui', new_agence_user_path(@agence) %></div>
+          </div>
+            </div>
+          </div>
+          </div>
       <% end %>
-      <p>Voulez vous créer un nouvel utilisateur pour <%=  @agence.raison_sociale %> ?</p>
-      <%= link_to 'Oui', new_agence_user_path(@agence) %>
-  <% else %>
-      <h3>Aucun utilisateurs !</h3>
-
-      <p>Voulez vous en créer un pour cette agence ?</p>
-      <%= link_to 'Oui', new_agence_user_path(@agence) %>
-  <% end %>
-  <%# will_paginate @users, renderer: BootstrapPagination::Rails, class: 'pagination-sm' %>
+      <%# will_paginate @users, renderer: BootstrapPagination::Rails, class: 'pagination-sm' %>
 </div>

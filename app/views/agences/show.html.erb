@@ -20,103 +20,101 @@
   </div>
 
 
-
-
-      <div class="col-md-4" align="left" style="border: 1px solid black"> colonne de gauche</div>
-
-
-      <div class="col-md-4" style="border: 1px solid black">
-
-        <div class="row">
-          <div class="col-md-6">Raison sociale</div>
-          <div class="col-md-6" ><%= @agence.raison_sociale %></div>
-        </div>
-
-
-
-        <div class="row">
-          <div class="col-md-6" align="right">N° de Siret</div>
-          <div class="col-md-6" align="left"><%= @agence.siret %></div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6" align="right">Numéro de la rue</div>
-          <div class="col-md-6" align="left"><%= @agence.num_rue %></div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6" align="right">Première ligne d'adresse</div>
-          <div class="col-md-6" align="left"><%= @agence.adresse01l01 %></div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6" align="right">Deuxième ligne d'adresse</div>
-          <div class="col-md-6" align="left"><%= @agence.adresse01l02 %></div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6" align="right">Troisième ligne d'adresse</div>
-          <div class="col-md-6" align="left"><%= @agence.adresse01l03 %></div>
-        </div>
-
-
-        <div class="row">
-          <div class="col-md-6" align="right">Code postal</div>
-          <div class="col-md-6" align="left"><%= @agence.code_postal %></div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6" align="right">Ville</div>
-          <div class="col-md-6" align="left"><%= @agence.ville %></div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6" align="right">Région</div>
-          <div class="col-md-6" align="left"><%= @agence.region %></div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6" align="right">Pays</div>
-          <div class="col-md-6" align="left"><%= @agence.pays %></div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6" align="right">Pays</div>
-          <div class="col-md-6" align="left"><%= @agence.pays %></div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6" align="right">Téléphone</div>
-          <div class="col-md-6" align="left"><%= @agence.telephone %></div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6" align="right">Fax</div>
-          <div class="col-md-6" align="left"><%= @agence.fax %></div>
-        </div>
-
-
-        <div class="row">
-          <div class="col-md-6" align="right">email</div>
-          <div class="col-md-6" align="left"><%= @agence.email %></div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12"><hr></div>
-        </div>
-
-
-        <div class="row" style="border: 1px solid black">
-          <div class="col-md-6" align="left"><%= link_to "edit", edit_agence_path %></div>
-          <div class="col-md-6" align="left"><%= link_to "Cancel", agences_path %></div>
-
-        </div>
-      </div>
+  <div class="col-md-4" align="left" style="border: 1px solid black"> colonne de gauche</div>
 
 
   <div class="col-md-4" style="border: 1px solid black">
 
-    <%= render 'users/index_insert'%></div>
+    <div class="row">
+      <div class="col-md-6">Raison sociale</div>
+      <div class="col-md-6"><%= @agence.raison_sociale %></div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-6" align="right">N° de Siret</div>
+      <div class="col-md-6" align="left"><%= @agence.siret %></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6" align="right">Numéro de la rue</div>
+      <div class="col-md-6" align="left"><%= @agence.num_rue %></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6" align="right">Première ligne d'adresse</div>
+      <div class="col-md-6" align="left"><%= @agence.adresse01l01 %></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6" align="right">Deuxième ligne d'adresse</div>
+      <div class="col-md-6" align="left"><%= @agence.adresse01l02 %></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6" align="right">Troisième ligne d'adresse</div>
+      <div class="col-md-6" align="left"><%= @agence.adresse01l03 %></div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-6" align="right">Code postal</div>
+      <div class="col-md-6" align="left"><%= @agence.code_postal %></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6" align="right">Ville</div>
+      <div class="col-md-6" align="left"><%= @agence.ville %></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6" align="right">Région</div>
+      <div class="col-md-6" align="left"><%= @agence.region %></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6" align="right">Pays</div>
+      <div class="col-md-6" align="left"><%= @agence.pays %></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6" align="right">Pays</div>
+      <div class="col-md-6" align="left"><%= @agence.pays %></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6" align="right">Téléphone</div>
+      <div class="col-md-6" align="left"><%= @agence.telephone %></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6" align="right">Fax</div>
+      <div class="col-md-6" align="left"><%= @agence.fax %></div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-6" align="right">email</div>
+      <div class="col-md-6" align="left"><%= @agence.email %></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <hr>
+      </div>
+    </div>
+
+
+    <div class="row" style="border: 1px solid black">
+      <div class="col-md-6" align="left"><%= link_to "edit", edit_agence_path %></div>
+      <div class="col-md-6" align="left"><%= link_to "Cancel", agences_path %></div>
+
+    </div>
   </div>
 
+
+  <div class="col-md-4" style="border: 1px solid black">
+
+    <%= render 'users/index_insert' %></div>
 </div>
+
