@@ -11,13 +11,17 @@
 <div class="container">
   <ul class="nav nav-tabs">
     <li><%= link_to 'home', home_path %></li>
-    <% if current_user%>
-        <li><%= link_to 'QuimmoPro', welcome_path %></li>
-        <li><%= link_to 'Sign Out', session_path, method: :delete, class: 'button' %></li>
-        <%	 else %>
     <li><%= link_to 'QuimmoPro SignIn', signin_path %></li>
-  <%	 end %>
-        </ul>
+    <% if session[:user_id] = nil %>
+        <li><%= link_to 'QuimmoPro SignIn', signin_path %></li>
+    <%	 if current_user %>
+        <li><%= link_to 'QuimmoPro', welcome_path %></li>
+        <li><%= link_to 'Sign Out', session_path, method: :delete %></li>
+        <li>id_user : <%= @user.id %></li>
+        <li> agence : <%= link_to @agence.raison_sociale, welcome_path %></li>
+    <% end %>
+    <% end %>
+            </ul>
 </div>
 
 <div class="container">

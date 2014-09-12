@@ -15,6 +15,7 @@
     <% if current_user %>
         utilisateur : <%= @user[:id] %> <%= @user[:name] %>
         Agence: <%= link_to @agence[:raison_sociale], agence_path(@agence) %>
+        id <%= @agence[:id] %>
 
     <% end %>
 
