@@ -1,8 +1,8 @@
 module AgencesHelper
 
-  def image_for(movie)
-    if movie.image.exists?
-      image_tag(movie.image.url)
+  def image_for(agence)
+    if agence.image.exists?
+      image_tag(agence.image.url)
     else
       image_tag('placeholder.png')
     end
