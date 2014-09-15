@@ -51,7 +51,7 @@ class AgencesController < ApplicationController
   private
 
   def agence_params
-    params.require(:agence).permit(:raison_sociale, :siret, :num_rue, :adresse01l01, :adresse01l02, :adresse01l03, :code_postal, :ville, :region, :pays, :telephone, :fax, :email, :image)
+    params.require(:agence).permit(:raison_sociale, :siret, :num_rue, :adresse01l01, :adresse01l02, :adresse01l03, :code_postal, :ville, :region, :pays, :telephone, :fax, :email, :image, :image_file_name)
   end
 
     def require_correct_user

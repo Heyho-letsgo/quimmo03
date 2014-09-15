@@ -41,7 +41,6 @@ gem 'aws-sdk'
 
 group :development, :test do
   gem 'rspec-rails'
-  gem 'jazz_hands'
   gem 'sqlite3'
 
 end
@@ -53,7 +52,7 @@ end
 
 # Pour Heroku
 group :production do
-  gem 'jazz_hands'
+ # gem 'jazz_hands'
   gem 'pg'
   gem 'rails_12factor'
 
