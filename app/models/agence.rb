@@ -10,11 +10,12 @@ class Agence < ActiveRecord::Base
   validates :image, presence: true
 
 
-  has_attached_file :image, styles: {
-      thumb: '100x100>',
-      square: '200x200#',
-      medium: '300x300>'
-  }
+  has_attached_file :image,
+                    :styles => { :medium => "x300", :thumb => "x100" },
+                    :default_url => "************",
+                    :storage => :s3,
+                    :bucket => 'obscure-caverns-5201',
+                    :s3_credentials => S3_CREDENTIALS
 
   validates_attachment :image, :content_type => { :content_type => ['image/jpeg', 'image/png'] }, :size => { :less_than => 1.megabyte }
   validates_attachment_presence :image
