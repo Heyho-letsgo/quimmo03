@@ -84,10 +84,11 @@ Rails.application.configure do
   # utilisation d'amazon et paperclip
   config.paperclip_defaults = {
       :storage => :s3,
+      :s3_protocol => 'http',
+      :bucket => ENV['AWS_BUCKET'],
       :s3_credentials => {
-          :bucket => ENV['obscure-caverns-5201'],
-          :access_key_id => ENV['AKIAIEGGW5AN76EDKIIA'],
-          :secret_access_key => ENV['Quimmo03']
+          :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+          :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
       }
   }
 end

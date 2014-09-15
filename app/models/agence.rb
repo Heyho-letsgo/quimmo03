@@ -12,7 +12,6 @@ class Agence < ActiveRecord::Base
 
   has_attached_file :image,
                     :styles => { :medium => "x300", :thumb => "x100" },
-                    :default_url => "************",
                     :storage => :s3,
                     :bucket => 'obscure-caverns-5201',
                     :s3_credentials => S3_CREDENTIALS
