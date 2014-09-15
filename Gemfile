@@ -36,12 +36,14 @@ gem 'sass-rails'
 gem "autoprefixer-rails"
 gem 'will_paginate-bootstrap'
 # Images
-gem "paperclip"
+gem 'paperclip'
+gem 'aws-sdk'
 
 group :development, :test do
   gem 'rspec-rails'
-  gem 'jazz_hands'
   gem 'sqlite3'
+ gem 'jazz_hands'
+
 
 end
 
@@ -52,6 +54,7 @@ end
 
 # Pour Heroku
 group :production do
+ # gem 'jazz_hands'
   gem 'pg'
   gem 'rails_12factor'
 
