@@ -34,18 +34,18 @@
       <file leaf-file-name="agence.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/agence.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="69" max-vertical-offset="450">
+              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show_user_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/features/show_user_spec.rb">
+      <file leaf-file-name="20140912124157_add_extra_image_fields_to_agences.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20140912124157_add_extra_image_fields_to_agences.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -61,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6524064" vertical-offset="924" max-vertical-offset="1560">
-              <caret line="83" column="2" selection-start-line="83" selection-start-column="2" selection-end-line="83" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1254" max-vertical-offset="1530">
+              <caret line="91" column="3" selection-start-line="91" selection-start-column="3" selection-end-line="91" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -74,38 +74,40 @@
       <file leaf-file-name="development.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="agences_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/agences_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="812" max-vertical-offset="1050">
-              <caret line="53" column="203" selection-start-line="53" selection-start-column="203" selection-end-line="53" selection-end-column="203" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="attributes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/support/attributes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="6" max-vertical-offset="600">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="489" max-vertical-offset="810">
+              <caret line="45" column="3" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/welcome/show.html.erb">
+        <entry file="file://$PROJECT_DIR$/app/views/agences/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.25" vertical-offset="135" max-vertical-offset="915">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.625" vertical-offset="315" max-vertical-offset="1935">
+              <caret line="22" column="73" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/agences/_form.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.041667" vertical-offset="1292" max-vertical-offset="1785">
+              <caret line="99" column="41" selection-start-line="99" selection-start-column="41" selection-end-line="99" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="agences_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/agences_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.41860464" vertical-offset="573" max-vertical-offset="1095">
+              <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -124,8 +126,8 @@
       <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="617" max-vertical-offset="1365">
-              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="497" max-vertical-offset="1245">
+              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -141,8 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/application.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_flashes.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/session_controller.rb" />
         <option value="$PROJECT_DIR$/public/404.html" />
@@ -184,14 +184,16 @@
         <option value="$PROJECT_DIR$/app/views/agences/new.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20140912133234_add_imagefilename_to_agences.rb" />
         <option value="$PROJECT_DIR$/app/helpers/agences_helper.rb" />
-        <option value="$PROJECT_DIR$/app/views/agences/_form.html.erb" />
         <option value="dbtable:/30884e48/d517b575-ecad-464f-99b2-406e46574d73/..agences" />
         <option value="$PROJECT_DIR$/app/views/agences/show.html.erb" />
         <option value="$PROJECT_DIR$/spec/support/attributes.rb" />
-        <option value="$PROJECT_DIR$/app/models/agence.rb" />
         <option value="$PROJECT_DIR$/app/controllers/agences_controller.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/config/environments/development.rb" />
+        <option value="$PROJECT_DIR$/app/models/agence.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140915094934_add_image_to_agences.rb" />
+        <option value="$PROJECT_DIR$/app/views/agences/_form.html.erb" />
       </list>
     </option>
   </component>
@@ -682,7 +684,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="FullScreen" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="Gem&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/Gemfile&#10;contr&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/controllers/agences_controller.rb&#10;show&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/views/welcome/show.html.erb&#10;contro&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/spec/controllers/agences_controller_spec.rb&#10;new&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/views/agences/new.html.erb&#10;sessio&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/controllers/sessions_controller.rb&#10;sess&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/controllers/sessions_controller.rb&#10;app&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/controllers/application_controller.rb&#10;sho&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/views/home/show.html.erb&#10;index&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/views/users/_index_insert.html.erb&#10;agen&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/models/agence.rb&#10;cont&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/controllers/sessions_controller.rb&#10;rout&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/config/routes.rb&#10;home&#9;ACTION&#9;FileChooser.GotoHome&#10;route&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/config/routes.rb&#10;rou&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/config/routes.rb&#10;sch&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/db/schema.rb&#10;agence.rb&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/models/agence.rb&#10;schem&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/db/schema.rb&#10;sche&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/db/schema.rb&#10;_f&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/views/users/_form.html.erb&#10;use&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/controllers/users_controller.rb&#10;inde&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/views/users/index.html.erb&#10;_for&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/views/agences/_form.html.erb&#10;for&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/views/users/_form.html.erb&#10;users.&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/controllers/users_controller.rb&#10;appli&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/views/layouts/application.html.erb&#10;Ge&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/Gemfile" />
+    <property name="SearchEverywhereHistoryKey" value="show&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/views/agences/show.html.erb&#10;Gem&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/Gemfile&#10;contr&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/controllers/agences_controller.rb&#10;contro&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/spec/controllers/agences_controller_spec.rb&#10;new&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/views/agences/new.html.erb&#10;sessio&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/controllers/sessions_controller.rb&#10;sess&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/controllers/sessions_controller.rb&#10;app&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/controllers/application_controller.rb&#10;sho&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/views/home/show.html.erb&#10;index&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/views/users/_index_insert.html.erb&#10;agen&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/models/agence.rb&#10;cont&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/controllers/sessions_controller.rb&#10;rout&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/config/routes.rb&#10;home&#9;ACTION&#9;FileChooser.GotoHome&#10;route&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/config/routes.rb&#10;rou&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/config/routes.rb&#10;sch&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/db/schema.rb&#10;agence.rb&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/models/agence.rb&#10;schem&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/db/schema.rb&#10;sche&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/db/schema.rb&#10;_f&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/views/users/_form.html.erb&#10;use&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/controllers/users_controller.rb&#10;inde&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/views/users/index.html.erb&#10;_for&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/views/agences/_form.html.erb&#10;for&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/views/users/_form.html.erb&#10;users.&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/controllers/users_controller.rb&#10;appli&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/app/views/layouts/application.html.erb&#10;Ge&#9;FILE&#9;file:///home/andrew/workspace/quimmo03/Gemfile" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -1032,10 +1034,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="24" width="1282" height="753" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32700136" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5458861" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5458861" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32717678" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1104,27 +1106,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="uml://RailsDependency/#quimmo03">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>RailsDependency</ID>
-          <OriginalElement>#quimmo03</OriginalElement>
-          <nodes>
-            <node x="" y="">User</node>
-            <node x="" y="">Agence</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="350.0" y="149.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Migration fields</Category>
-            <Category>Association fields</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6912522" vertical-offset="182" max-vertical-offset="765">
@@ -1326,13 +1307,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="210">
           <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140912124157_add_extra_image_fields_to_agences.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -1364,22 +1338,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19851577" vertical-offset="22331" max-vertical-offset="24778">
           <caret line="1702" column="10" selection-start-line="1702" selection-start-column="10" selection-end-line="1702" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/agences/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1210" max-vertical-offset="1785">
-          <caret line="105" column="51" selection-start-line="105" selection-start-column="51" selection-end-line="105" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/agences/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625" vertical-offset="315" max-vertical-offset="1935">
-          <caret line="22" column="73" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
           <folding />
         </state>
       </provider>
@@ -1448,30 +1406,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/agence.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/agences_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="812" max-vertical-offset="1050">
-          <caret line="53" column="203" selection-start-line="53" selection-start-column="203" selection-end-line="53" selection-end-column="203" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="617" max-vertical-offset="1365">
-          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/30884e48/d517b575-ecad-464f-99b2-406e46574d73/..agences">
       <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
         <state />
@@ -1483,6 +1417,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="497" max-vertical-offset="1245">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1254" max-vertical-offset="1530">
+          <caret line="91" column="3" selection-start-line="91" selection-start-column="3" selection-end-line="91" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="489" max-vertical-offset="810">
+          <caret line="45" column="3" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/agence.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="69" max-vertical-offset="450">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/agences/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625" vertical-offset="315" max-vertical-offset="1935">
+          <caret line="22" column="73" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140912133234_add_imagefilename_to_agences.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
@@ -1491,18 +1467,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140912124157_add_extra_image_fields_to_agences.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/agences/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6524064" vertical-offset="924" max-vertical-offset="1560">
-          <caret line="83" column="2" selection-start-line="83" selection-start-column="2" selection-end-line="83" selection-end-column="2" />
+        <state vertical-scroll-proportion="-8.041667" vertical-offset="1292" max-vertical-offset="1785">
+          <caret line="99" column="41" selection-start-line="99" selection-start-column="41" selection-end-line="99" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/agences_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41860464" vertical-offset="573" max-vertical-offset="1095">
+          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
           <folding />
         </state>
       </provider>

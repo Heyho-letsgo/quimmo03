@@ -36,7 +36,7 @@ gem 'sass-rails'
 gem "autoprefixer-rails"
 gem 'will_paginate-bootstrap'
 # Images
-gem "paperclip"
+gem 'paperclip'
 gem 'aws-sdk'
 
 group :development, :test do
