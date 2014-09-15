@@ -20,7 +20,10 @@
   </div>
 
 
-  <div class="col-md-4" align="left" style="border: 1px solid lightgrey"> colonne de gauche</div>
+  <div class="col-md-4" align="left" style="border: 1px solid lightgrey">
+
+    <%= image_for(@agence) %>
+  </div>
 
 
   <div class="col-md-4" style="border: 1px solid lightgrey">
@@ -107,7 +110,7 @@
 
     <div class="row" style="border: 1px solid black">
       <div class="col-md-6" align="left"><%= link_to "edit", edit_agence_path %></div>
-      <div class="col-md-6" align="left"><%= link_to "Cancel", agences_path %></div>
+      <div class="col-md-6" align="left"><%= link_to "Cancel", welcome_path %></div>
 
     </div>
   </div>

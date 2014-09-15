@@ -1,13 +1,13 @@
 <div class="container">
-<h1>Sign In</h1>
-<h2>No account yet? <%= link_to 'Sign up!', signup_path %></h2>
+<h1>Quimmo Pro</h1>
+<h2>Connexion </h2>
     <div class="container">
   <%= form_tag(session_path) do %>
 <div class="container">
 
   <div class="row">
-       <div class="col-md-2"> <%= label_tag :email, "Email ou username"  %></div>
-       <div class="col-md-10"><%= text_field_tag :email || :username, nil, autofocus: true, size: 40, required: true %> </div>
+       <div class="col-md-2"> <%= label_tag :email, "Email"  %></div>
+       <div class="col-md-10"><%= email_field_tag :email || :username, nil, autofocus: true, size: 40, required: true %> </div>
    </div>
 
    <div class="row">
@@ -16,11 +16,8 @@
    </div>
       <% end %>
   <div class="row">
-
-    <div class="col-md-6">  <%= submit_tag 'Se connecter' %>   </div>
-
-    <div class="col-md-6">  </div>
-    <div class="col-md-6">  <button type="button" class="btn btn-default"><%= link_to 'Revenir', home_path%></button>
+    <div class="col-md-6">
+    <div class="col-md-1 col-md-offset-9">  <%= submit_tag 'Se connecter' %>   </div>
     </div>
   </div>
 

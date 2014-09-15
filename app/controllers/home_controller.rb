@@ -6,11 +6,6 @@ class HomeController < ApplicationController
 
   def show
 
-    if
-    @user = current_user
-    @agence = @user.agence
-    else
-    end
   end
   end
 

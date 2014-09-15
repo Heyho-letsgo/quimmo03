@@ -1,4 +1,5 @@
 def user_attributes(overrides = {})
+
   {
     name: "Example User",
     email: "larry@example.com",
@@ -12,6 +13,8 @@ end
 
 
 def agence_attributes(overrides = {})
+  random_number = (0..9).to_a.shuffle[0..10].join
+
   {
       raison_sociale: "Example Agence",
       siret: "1234567899999",

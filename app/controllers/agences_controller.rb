@@ -2,7 +2,7 @@ class AgencesController < ApplicationController
 
     before_action :require_signin #dans tout les cas le user doit être signin
     before_action :require_correct_user, only:  [:show, :edit, :update] # Les users peuvent seulement
-    before_action :require_admin, only: [:index] # Les users peuvent seulement
+    before_action :require_admin, only: [:index, :new] # Les users peuvent seulement
 
 
 
@@ -36,17 +36,22 @@ class AgencesController < ApplicationController
 
 
   def edit
-
+    @agence = Agence.find(params[:id])
   end
 
   def update
-
+    @agence = Agence.find(params[:id])
+    if @agence.update(agence_params)
+      redirect_to @agence, notice: "Agence successfully updated!"
+    else
+      render :edit
+    end
   end
 
   private
 
   def agence_params
-    params.require(:agence).permit(:raison_sociale, :siret, :num_rue, :adresse01l01, :adresse01l02, :adresse01l03, :code_postal, :ville, :region, :pays, :telephone, :fax, :email)
+    params.require(:agence).permit(:raison_sociale, :siret, :num_rue, :adresse01l01, :adresse01l02, :adresse01l03, :code_postal, :ville, :region, :pays, :telephone, :fax, :email, :image)
   end
 
     def require_correct_user

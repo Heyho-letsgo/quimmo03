@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
   def create
         if user = User.authenticate(params[:email], params[:password])
       session[:user_id] = user.id
-      flash[:notice] = "Welcome back #{user.name}!" #- Modifcation du fichier suivant sur la méthode name
+      #flash[:notice] = "Welcome back #{user.name}!" #- Modifcation du fichier suivant sur la méthode name
                                                     # au lieu de username-/home/andrew/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/auth/basic.rb
       @user_mail = User.where(params[:email])
 
