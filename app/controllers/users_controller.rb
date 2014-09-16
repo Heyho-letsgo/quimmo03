@@ -9,12 +9,20 @@ before_action :set_agence, only: [:create]
 
 
   def index
+    if :admin
+
+      @users = User.all.paginate(:page => params[:page], :per_page => 10)
+      @agences = Agence.all
+
+      #@agence = Agence.find(params[:agence_id])
+    else
   @agence = Agence.find(params[:agence_id])
   @users = @agence.users
   @user = @users.where(:agence_id)
     #.paginate(:page => params[:page], :per_page => 15)
 #@user = @agence.(params[:id])
-  end
+    end
+    end
 
   def show
     # la variable @agence est utilisée pour la session
@@ -24,6 +32,8 @@ before_action :set_agence, only: [:create]
     @agence_admin = Agence.find(params[:agence_id])
     @parent_users = @agence_admin.users #, agence_user_path
     @user = @parent_users.find(params[:id])
+
+
   end
 
 
@@ -57,6 +67,11 @@ before_action :set_agence, only: [:create]
     else
       render :edit
     end
+  end
+
+
+  def destroy
+
   end
 
 
