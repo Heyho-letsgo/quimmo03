@@ -17,8 +17,6 @@
         Agence: <%= link_to @agence[:raison_sociale], agence_path(@agence) %>
         id <%= @agence[:id] %>
 
-    <% end %>
-
   </ul>
 </div>
 <div class="container">
@@ -50,5 +48,9 @@
     </div>
   </div>
 </div>
-</body>
+<% elsif current_user_admin?%>
+    <h2>Admin</h2>
+    <%end %>
+
+    </body>
 </html>

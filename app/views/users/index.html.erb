@@ -17,12 +17,17 @@
       <th>Id</th>
       <th>Name</th>
       <th>Email</th>
+      <th>agence_id</th>
+      <th>agence.raisonsociale</th>
+
+
     </tr>
     </thead>
     <tbody>
     <tr>
       <% @users.each do |user| %>
-      <% @agences.each do |agence| %>
+      <% @agence = Agence.where(id: user.agence_id) %>
+            <%	 @agence.each do |agence| %>
           <td>
             <%= link_to user.id, [user.agence,user]  %>
           </td>
@@ -37,14 +42,17 @@
           <td>
             <%= link_to user.agence_id, [user.agence,user]%>
           </td>
+
           <td>
+
             <%= link_to agence.raison_sociale, [agence]%>
           </td>
 
 
           </tr>
           </tbody>
-      <% end %>
           <%	 end %>
-      </table>
+      <%	 end %>
+          </table>
+
 </div>
